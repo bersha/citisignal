@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: "https://author-p113804-e1338322.adobeaemcloud.com/bin/franklin.delivery/bersha/citisignal/main"
+    url: "https://author-p142541-e1463480.adobeaemcloud.com/bin/franklin.delivery/bersha/citisignal/main"
     type: "markup"
     suffix: ".html"
 
