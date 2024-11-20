@@ -160,7 +160,7 @@ function handleSelection(event) {
   }
 }
 
-function attachEventListners(main) {
+async function attachEventListners(main) {
   [
     'aue:content-patch',
     'aue:content-update',
@@ -172,7 +172,7 @@ function attachEventListners(main) {
     const applied = await applyChanges(event);
     if (!applied) window.location.reload();
   }));
-
+  const module = await import('./form-editor-support.js');
   main?.addEventListener('aue:ui-select', handleSelection);
 }
 
